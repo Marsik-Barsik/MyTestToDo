@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:autofillHints="input task"
+    tools:context=".sheetFragment.FragmentNewTask">
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="281dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/add_new_task"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/textInput"
+        android:layout_width="322dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="547dp"
+        android:autofillHints="enter task"
+        android:defaultFocusHighlightEnabled="false"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:textColorHighlight="#9A5353"
+        android:textColorHint="#95786D6D"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="328dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="48dp"
+        android:text="@string/save"
+        android:textAllCaps="false"
+        app:icon="@drawable/baseline_save_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInput"
+        tools:ignore="VisualLintButtonSize">
+
+    </Button>
+
+    <Button
+        android:id="@+id/buttonEnterTime"
+        android:layout_width="335dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="48dp"
+        android:text="@string/select_time"
+        android:textAllCaps="false"
+        app:icon="@drawable/baseline_access_time_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSave"
+        tools:ignore="VisualLintButtonSize" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
